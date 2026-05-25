@@ -1,16 +1,18 @@
 <?php
 
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db = "pycods";
+
 $conn = mysqli_connect(
-
-    "sqlXXX.infinityfree.com",
-    "usuario",
-    "password",
-    "nombre_bd"
-
+    $host,
+    $user,
+    $pass,
+    $db
 );
 
 if(!$conn){
-
-    die("Error conexión");
+    die("Error de conexión");
 }
 ?>
